@@ -1,0 +1,33 @@
+version: '3'
+services:
+  wordpress:
+    image: wordpress:latest
+    ports:
+      - 8080:80
+    restart: always
+    volumes:
+      - ./theme/:/var/www/html/wp-content/themes/StarterTheme
+      - ./plugins/:/var/www/html/wp-content/plugins
+    environment:
+      WORDPRESS_DB_HOST: database
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: password
+    depends_on:
+      - database
+    networks:
+      - wp
+  database:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./.db:/var/lib/mysql
+    networks:
+      - wp
+networks:
+  wp:
+    driver: bridge
+

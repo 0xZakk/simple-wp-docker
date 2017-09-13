@@ -1,0 +1,35 @@
+{
+  "name": "Simple WordPress with Docker",
+  "description": "",
+  "version": "0.1.0",
+  "type": "project",
+  "keywords": [],
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Zakk Fleischmann",
+      "email": "zachary.fleischmann@gmail.com"
+    }
+  ],
+  "repositories": [
+      {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+      }
+  ],
+  "require": {
+    "composer/installers": "*",
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/timber-library": "*",
+    "wpackagist-plugin/contact-form-7": "*",
+    "wpackagist-plugin/flamingo": "*"
+  },
+  "extra": {
+    "installer-paths": {
+      "plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    }
+  }
+}
+
