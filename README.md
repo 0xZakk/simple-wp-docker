@@ -41,7 +41,9 @@ navigate to [`localhost:8080`](http://localhost:8080) and see the WordPress
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+To deploy a site built with this site, you can either deploy this container
+project and run it using the default WordPress image or you can deploy the theme
+and plugins directory using any method you'd like.
 
 ## Built With
 
