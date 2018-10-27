@@ -1,2 +1,4 @@
 .db
 /vendor
+plugins
+!plugins/index.php
