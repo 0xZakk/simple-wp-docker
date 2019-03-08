@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "b20f7b252cd6765ee68e66f8b3093a230ad97608"
+                "reference": "5d51c2c61a0a66e312057bb14c74b8a93c9a528f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/b20f7b252cd6765ee68e66f8b3093a230ad97608",
-                "reference": "b20f7b252cd6765ee68e66f8b3093a230ad97608",
+                "url": "https://api.github.com/repos/composer/installers/zipball/5d51c2c61a0a66e312057bb14c74b8a93c9a528f",
+                "reference": "5d51c2c61a0a66e312057bb14c74b8a93c9a528f",
                 "shasum": ""
             },
             "require": {
@@ -125,7 +125,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2018-10-10T11:17:18+00:00"
+            "time": "2019-01-25T07:48:56+00:00"
         },
         {
             "name": "wpackagist-plugin/akismet",
